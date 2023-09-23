@@ -1,0 +1,5 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '合肥 KUG'
+#theme = 'PaperMod'
+theme = 'ananke'
