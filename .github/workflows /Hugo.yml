@@ -40,7 +40,7 @@ jobs:
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
-          REPO: git@github.com:beijing-kug/beijing-kug.github.io.git
+          REPO: git@github.com:hefei-kug/hefei-kug.github.io.git
           SQUASH_HISTORY: "false"
           BRANCH:  main
           FOLDER: public
