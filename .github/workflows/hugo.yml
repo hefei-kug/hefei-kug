@@ -32,7 +32,7 @@ jobs:
       
       - name: Build Hugo Page
         run: |
-          cd hugo
+          cd quickstart
           pwd
           hugo --minify
           hugo
