@@ -1,0 +1,129 @@
+baseURL: https://hefei-kug.github.io/
+languageCode: zh-CN
+title: 合肥 KUG
+theme: "hugo-PaperMod"
+enableRobotsTXT: true
+
+buildDrafts: true
+buildFuture: true
+buildExpired: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: 合肥 KUG
+  description: "合肥 Kotlin 用户组"
+  keywords:
+    [
+      Kotlin,
+      Kotlin User Group,
+      Hefei Kotlin User Group,
+      合肥 Kotlin 用户组,
+      KUG,
+      hefei KUG,
+      合肥 KUG,
+    ]
+  author: hefei-kug
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "kug-hefei-icon.png"
+
+  label:
+    text: "合肥 KUG"
+
+  profileMode:
+    enabled: true
+    title: "Hefei Kotlin User Group"
+    subtitle: Hi, 这里是合肥 KUG，欢迎所有对 Kotlin 感兴趣的开发者加入我们的组织。
+    content: 
+      - 在这里可以和其它成员一起学习、讨论技术问题 📚
+      - 我们还会不定期举行研讨会，进行与 Kotlin 相关的主题分享与讨论
+      - 联系我们：添加组织者微信 [WestonHan] 备注 KUG，邀请入群
+    
+    imageUrl: "kug-logo.png"
+    imageTitle: "KUG logo"
+    imageWidth: 360
+    imageHeight: 360
+
+  socialIcons:
+    - name: GitHub
+      url: "https://github.com/hefei-kug"
+    - name: Email
+      url: "mailto:bluehaw01@gmail.com"
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: events
+      name: 历史活动
+      url: https://github.com/hefei-kug/events/issues
+      weight: 1
+    - identifier: official
+      name: 全球 KUGs
+      url: https://kotlinlang.org/community/user-groups/
+      weight: 2
+
+publishDir: ./public
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
